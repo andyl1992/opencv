@@ -6,6 +6,10 @@ if(NOT HAVE_PROTOBUF)
   ocv_module_disable(opencv_dnn)
 endif()
 
+if(DEFINED WINRT AND NOT DEFINED ENABLE_WINRT_MODE_NATIVE)
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /ZW")
+endif()
+
 set(the_description "Deep neural network module. It allows to load models from different frameworks and to make forward pass")
 
 ocv_add_dispatched_file_force_all("layers/layers_common" AVX AVX2 AVX512_SKX)
