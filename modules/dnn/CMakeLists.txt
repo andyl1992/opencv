@@ -1,5 +1,5 @@
 if(WINRT)
-  ocv_module_disable(dnn)
+  #ocv_module_disable(dnn)
 endif()
 
 if(NOT HAVE_PROTOBUF)
