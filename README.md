@@ -7,4 +7,5 @@ This was done in order to access the latest version of the dnn module specifical
 I have succesfully run this buid on the hololens and used the dnn module. 
 
 The changes made were decided upon by viewing the commits of sylvain-prevosts.
+
 inspired by https://github.com/sylvain-prevost/opencv-hololens
